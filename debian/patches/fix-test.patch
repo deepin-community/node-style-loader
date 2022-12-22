@@ -1,0 +1,27 @@
+Description: fix test for jest ≥ 27
+ See https://jestjs.io/docs/configuration#testenvironment-string
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/997575
+Forwarded: not-needed
+Last-Update: 2021-10-24
+
+--- a/test/runtime/injectStylesIntoLinkTag.test.js
++++ b/test/runtime/injectStylesIntoLinkTag.test.js
+@@ -1,3 +1,7 @@
++/**
++ * @jest-environment jsdom
++ */
++
+ /* eslint-env browser */
+ 
+ import injectStylesIntoLinkTag from '../../src/runtime/injectStylesIntoLinkTag';
+--- a/test/runtime/injectStylesIntoStyleTag.test.js
++++ b/test/runtime/injectStylesIntoStyleTag.test.js
+@@ -1,3 +1,7 @@
++/**
++ * @jest-environment jsdom
++ */
++
+ /* eslint-env browser */
+ 
+ import injectStylesIntoStyleTag from '../../src/runtime/injectStylesIntoStyleTag';

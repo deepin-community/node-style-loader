@@ -1,0 +1,80 @@
+node-style-loader (2.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Fix test for jest ≥ 27 (Closes: #997575)
+
+ -- Yadd <yadd@debian.org>  Sun, 24 Oct 2021 08:49:43 +0200
+
+node-style-loader (2.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful test
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 19 Nov 2020 08:38:12 +0100
+
+node-style-loader (2.0.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 2.0.0
+  * Build using babel7
+  * Update dependencies minimal versions
+  * Enabel part of upstream test using jest
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 18 Nov 2020 15:27:49 +0100
+
+node-style-loader (0.23.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 22 Aug 2019 14:12:43 +0530
+
+node-style-loader (0.23.1-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Xavier Guimard ]
+  * Add upstream/metadata
+
+  [ Daniel Ring ]
+  * Update d/copyright URL format
+
+  [ Pirate Praveen ]
+  * New upstream version 0.23.1
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Drop unnecessary build dependency on dh-buildinfo
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 14 Aug 2019 13:53:55 +0000
+
+node-style-loader (0.17.0-2) unstable; urgency=medium
+
+  * Add webpack to enhances list
+  * Mark package as Multi-Arch: foreign
+
+ -- Daniel Ring <dring@wolfishly.me>  Mon, 31 Dec 2018 19:37:40 -0800
+
+node-style-loader (0.17.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #875378)
+
+ -- Daniel Ring <dring@wolfishly.me>  Sun, 10 Sep 2017 22:33:23 -0700

@@ -1,0 +1,4 @@
+jest --ci -u test/runtime/isEqualLocals.test.js \
+	test/runtime/injectStylesIntoLinkTag.test.js \
+	test/runtime/injectStylesIntoStyleTag.test.js \
+	test/cjs.test.js

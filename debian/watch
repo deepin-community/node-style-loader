@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-style-loader-$1/ \
+ https://github.com/webpack/style-loader/tags .*/archive/.*/v?([\d\.]+).tar.gz
