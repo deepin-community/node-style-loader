@@ -1,3 +1,23 @@
+node-style-loader (3.3.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Wed, 23 Nov 2022 17:36:04 +0100
+
+node-style-loader (3.3.1-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Daniel Ring ]
+  * New upstream version (Closes: #1000246)
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.1
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Wed, 23 Nov 2022 15:29:26 +0100
+
 node-style-loader (2.0.0-3) unstable; urgency=medium
 
   * Team upload

@@ -2,6 +2,70 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/webpack-contrib/style-loader/compare/v3.3.0...v3.3.1) (2021-10-21)
+
+
+### Bug Fixes
+
+* small perf improvement ([#544](https://github.com/webpack-contrib/style-loader/issues/544)) ([610524e](https://github.com/webpack-contrib/style-loader/commit/610524ef6266c27e147d3c0003e7825b08f17454))
+
+## [3.3.0](https://github.com/webpack-contrib/style-loader/compare/v3.2.1...v3.3.0) (2021-09-21)
+
+
+### Features
+
+* added support for `supports()`, `layer()` and `media` from `@import` at-rules ([b9a600c](https://github.com/webpack-contrib/style-loader/commit/b9a600c87aa3f68caabcaa80f0a1c340e739e30e))
+* allow to pass options to `insert` function through `style.use()` ([#535](https://github.com/webpack-contrib/style-loader/issues/535)) ([f8ef63b](https://github.com/webpack-contrib/style-loader/commit/f8ef63b86a603232395f7708c508d6c3b639e92d))
+
+### [3.2.1](https://github.com/webpack-contrib/style-loader/compare/v3.2.0...v3.2.1) (2021-07-20)
+
+
+### Bug Fixes
+
+* added the `styletagtransform` option when it is a module to `addBuildDependency` ([#528](https://github.com/webpack-contrib/style-loader/issues/528)) ([270513f](https://github.com/webpack-contrib/style-loader/commit/270513fa76e13c96a36c2ae11e4dd526dfb9d72f))
+
+## [3.2.0](https://github.com/webpack-contrib/style-loader/compare/v3.1.0...v3.2.0) (2021-07-20)
+
+
+### Features
+
+* add link field in schema ([#525](https://github.com/webpack-contrib/style-loader/issues/525)) ([7ed3456](https://github.com/webpack-contrib/style-loader/commit/7ed345678cc1d01e3a93bf18ca2014d7b5419481))
+
+
+### Bug Fixes
+
+* added the `insert` option when it is a module to `addBuildDependency` ([#527](https://github.com/webpack-contrib/style-loader/issues/527)) ([3963c0b](https://github.com/webpack-contrib/style-loader/commit/3963c0bae298112754d8cc3fd1536499cefa65a6))
+
+## [3.1.0](https://github.com/webpack-contrib/style-loader/compare/v3.0.0...v3.1.0) (2021-07-12)
+
+
+### Features
+
+* allow to specify the `insert` option from file, we strongly recommend do it, using the `insert` option from file will reduce your bundle size, [example](https://github.com/webpack-contrib/style-loader#absolute-path-to-function) ([#521](https://github.com/webpack-contrib/style-loader/issues/521)) ([56fc8f0](https://github.com/webpack-contrib/style-loader/commit/56fc8f021c69407e4ad03a5d345c614b04789389))
+* allow to specify the `styleTagTransform` option from file, we strongly recommend do it, using the `styleTagTransform` option from file will reduce your bundle size, [example](https://github.com/webpack-contrib/style-loader#string-1)
+
+
+### Bug Fixes
+
+* reduce runtime ([#519](https://github.com/webpack-contrib/style-loader/issues/519)) ([8a26186](https://github.com/webpack-contrib/style-loader/commit/8a26186c364b45028fb6baeb4a05365c4d3526e2))
+* reduce runtime when you use custom options ([#520](https://github.com/webpack-contrib/style-loader/issues/520)) ([21c80c8](https://github.com/webpack-contrib/style-loader/commit/21c80c8c2f2ca751124f26f5984195e20f2ac665))
+
+## [3.0.0](https://github.com/webpack-contrib/style-loader/compare/v2.0.0...v3.0.0) (2021-06-24)
+
+### ⚠ BREAKING CHANGES
+
+* minimum supported `Node.js` version is `12.13.0`
+* minimum supported `webpack` version is `5.0.0`
+* the `modules.namedExport` option was removed, you don't need it anymore, because we respect the `modules.namedExport` option from `css-loader` (we just reexport all from `css-loader`), just remove it
+* the `styleTag` value of the `injectType` (default value) option earlier uses singleton style tag by default for IE8-IE9 due limitations ([more information](https://www.telerik.com/blogs/internet-explorer-css-limits)), in this release we have disabled this behavior, because these versions of IE are outdated, if you don't support these browsers this change does not affect you, if you require to support IE8-IE9, you can return old behaviour by setting `autoStyleTag` value for the `injectType` option (do the same for `lazyStyleTag`, i.e. change it to `lazyAutoStyleTag`)
+
+### Features
+
+* added `autoStyleTag` and `lazyAutoStyleTag` values for the `injectType` option for compatibility of work modern and IE8-IE9 browsers
+* added `styleTagTransform` option for custom processing style tags (useful if you need ponyfill CSS custom properties for IE8-IE10)
+* reduce size of generated code
+* reduce deps
+
 ## [2.0.0](https://github.com/webpack-contrib/style-loader/compare/v1.3.0...v2.0.0) (2020-10-09)
 
 
